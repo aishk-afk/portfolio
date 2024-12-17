@@ -1,0 +1,92 @@
+body{
+    background-color:ivory;
+}
+p{
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+p.font{
+    color:#241571;
+}
+.nav-link { 
+    color: midnightblue; 
+    transition: color 0.2s, text-decoration 0.3s; 
+    margin: 0 110px; 
+    margin-top: 15px;
+    font-size: 20px;
+    } 
+.nav-link:hover { 
+    color: #702963; 
+    text-decoration: underline; 
+    } 
+ .navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    } 
+.nav-container { 
+    display: flex; 
+    flex-grow: 1; 
+    justify-content: center; 
+    } 
+
+    .collapsible {
+        background-color: #fceec9;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: #ccc;
+      }
+      
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
+
+      .custom-button {
+        width: 150px; /* Adjust the width */
+        height: 50px; /* Adjust the height */
+        padding: 10px 20px; /* Adjust the padding */
+        font-size: 16px; /* Adjust the font size */
+    }
+    
+    .accordion-button.collapsed {
+        width: 100px; /* Adjust the width when collapsed */
+        height: 40px; /* Adjust the height when collapsed */
+        font-size: 14px; /* Adjust the font size when collapsed */
+    }
+    .accordion-item{
+        margin-top: 2em;
+    }
+
+    .section{
+        background-color: #241571;
+        padding:120px;
+    }
+    
+.long-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.long-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Adjust as needed */
+    height: 2px; /* Thickness of the underline */
+    background-color: white; /* Color of the underline */
+    width: 120%; /* Extend beyond the text */
+    margin-left: -10%; /* Center the underline */
+}

@@ -1,0 +1,40 @@
+/* Video Background Container */
+#video-bg {
+    position: fixed; /* Sticks to the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Pushes the video behind everything */
+    overflow: hidden;
+}
+
+/* Video Styling */
+#bg-video {
+    position: absolute; /* Aligns video within its container */
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures the video covers the entire viewport */
+    transform: translate(-50%, -50%);
+}
+table td{
+    padding: 1em;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Content Section */
+.my-projects-section {
+    position: relative; /* Keeps it above the background */
+    z-index: 1; /* Ensures content appears above the video */
+    padding: 2em; /* Adds spacing around content */
+    color: #000; /* Default text color */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Semi-transparent background for readability */
+    border-radius: 10px; /* Optional: Smooth edges for aesthetics */
+    margin: 2em auto; /* Center content */
+    max-width: 1200px; /* Limit content width for better layout */
+}
